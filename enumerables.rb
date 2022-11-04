@@ -38,7 +38,7 @@ def print_spicy_foods(spicy_foods)
   spicy_foods.map do |food|
 
     emo = "🌶" * food[:heat_level]
-    puts "#{food[:name]} (#{food[:cuisine]})| Heat Level : #{emo}"
+    puts "#{food[:name]} (#{food[:cuisine]}) | Heat Level: #{emo}"
     
     end
    
@@ -70,7 +70,7 @@ def print_spiciest_foods(spicy_foods)
    spiciest_cuisine =  spicy_foods.filter {|level| level[:heat_level] > 5 }
    spiciest_cuisine.map do |food|
     emo = "🌶" * food[:heat_level]
-    puts "#{food[:name]} (#{food[:cuisine]})| Heat Level : #{emo}"
+    puts "#{food[:name]} (#{food[:cuisine]}) | Heat Level: #{emo}"
     
     end
 end
@@ -85,5 +85,3 @@ def average_heat_level(spicy_foods)
   end
  all_heat_levels / 3
 end
-binding.pry
-0
